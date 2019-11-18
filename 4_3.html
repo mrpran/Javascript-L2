@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>JavaScript function to get a full textual representation of the day of the week (Sunday through Saturday).</p>
+<button onclick="long_Days(new Date(2015, 0, 15))">Date(2015, 0, 15)</button>
+<button onclick="long_Days(new Date(2015, 11, 14))">Date(2015, 11, 14)</button>
+<p id="demo"></p>
+
+<script>
+Date.longDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+function long_Days(dt)
+    { 
+      document.getElementById("demo").innerHTML = Date.longDays[dt.getDay()]; 
+    }
+</script>
+
+</body>
+</html>
