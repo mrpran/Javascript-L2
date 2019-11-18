@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Javascript random function</p>
+<button onclick="rand(20,1)">rand(20,1)</button>
+<button onclick="rand(1,10)">rand(1,10))</button>
+<button onclick="rand(6)">rand(6)</button>
+<p id="demo"></p>
+
+<script>
+ function rand(min, max) {
+  if (min==null && max==null)
+    return 0;    
+  
+  if (max == null) {
+      max = min;
+      min = 0;
+    }
+    document.getElementById("demo").innerHTML = min + Math.floor(Math.random() * (max - min + 1));
+  }
+</script>
+
+</body>
+</html>
