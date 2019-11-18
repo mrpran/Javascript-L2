@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>JavaScript function to format a number up to specified decimal places</p>
+<button onclick="decimals(2.100212, 2)">decimals(2.100212, 2)</button>
+<button onclick="decimals(2.100212, 3)">decimals(2.100212, 3)</button>
+<button onclick="decimals(2100, 2)">decimals(2100, 2)</button>
+<p id="demo"></p>
+
+<script>
+ function decimals(n, d) {
+ if ((typeof n !== 'number') || (typeof d !== 'number'))
+   return false;
+    	n = parseFloat(n) || 0;
+	document.getElementById("demo").innerHTML = n.toFixed(d);
+	}
+</script>
+
+</body>
+</html>
