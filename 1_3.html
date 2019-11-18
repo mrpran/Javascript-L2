@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>JavaScript function that takes a string which has lower and upper case letters as a parameter and converts upper case letters to lower case, and lower case letters to upper case.</p>
+<p>
+Test Data: 
+"aAbBC"
+</p>
+<button onclick="swapcase('aAbBC')">click here</button>
+<p id="demo"></p>
+
+<script>
+ function swapcase(str) {
+        document.getElementById("demo").innerHTML = str.replace(/([a-z]+)|([A-Z]+)/g, function(match, chr) {
+            return chr ? match.toUpperCase() : match.toLowerCase();
+        });
+    }
+</script>
+
+</body>
+</html>
