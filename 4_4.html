@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>JavaScript function to get difference to Greenwich time (GMT) in hours.</p>
+<button onclick="diff_to_GMT(new Date(2015, 0, 15))">Date(2015, 0, 15)</button>
+<p id="demo"></p>
+
+<script>
+function diff_to_GMT(dt) 
+{ 
+   document.getElementById("demo").innerHTML = (-dt.getTimezoneOffset() < 0 ? '-' : '+') + (Math.abs(dt.getTimezoneOffset() / 60) < 10 ? '0' : '') + (Math.abs(dt.getTimezoneOffset() / 60)) + '00';
+}
+
+</script>
+
+</body>
+</html>
