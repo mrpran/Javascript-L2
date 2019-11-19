@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Remove duplicate items from an JavaScript array.</p>
+<p>1, 2, 2, 4, 5, 4, 7, 8, 7, 3, 6</p>
+<button onclick="removeDuplicates([1, 2, 2, 4, 5, 4, 7, 8, 7, 3, 6])">click here</button>
+<p id="demo"></p>
+
+<script>
+function removeDuplicates(num) {
+  var x,
+      len=num.length,
+      out=[],
+      obj={};
+ 
+  for (x=0; x<len; x++) {
+    obj[num[x]]=0;
+  }
+  for (x in obj) {
+    out.push(x);
+  }
+   document.getElementById("demo").innerHTML =  out;
+}
+
+</script>
+
+</body>
+</html>
