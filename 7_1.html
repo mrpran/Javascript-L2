@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>October 13, 2014 11:13:00</p>
+<p>Click the button to display the date and time as a string.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var d = new Date("October 13, 2014 11:13:00");
+  var n = d.toString();
+  document.getElementById("demo").innerHTML = n;
+}
+</script>
+
+</body>
+</html>
