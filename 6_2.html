@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Display the value of Boolean(10 > 9):</p>
+
+<button onclick="myFunction(10,9)">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(a,b) {
+if( Boolean(a > b)){
+ document.getElementById("demo").innerHTML= a + " is greater."
+}
+else{
+document.getElementById("demo").innerHTML= b + " is greater."
+}
+}
+</script>
+
+</body>
+</html>
