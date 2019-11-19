@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo">Click the button to change the color of  text in this paragraph.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+
+function myFunction() {
+var txt;
+  var person = prompt("Please select color:", "rgb(255,0,0)");
+  if (person == null || person == "") {
+    txt = "User cancelled the prompt.";
+  } else {
+    txt = person;
+  }
+  document.getElementById("demo").style.background = person;
+}
+</script>
+
+</body>
+</html>
