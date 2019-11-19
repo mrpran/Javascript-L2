@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>
+Create a basic page in html with an image in it. When the user clicks on the image, open a new
+tab or window that displays the Google home page. Add a form button beneath the image
+labelled 'Close'. When the button is clicked, the new tab or window should close.
+
+</p>
+
+
+<img src="https://cdn.business2community.com/wp-content/uploads/2019/03/click-here-button.jpg" onclick="openWin()" width="200px" height="100px"><br>
+<button onclick="closeWin()">Close google.com</button>
+
+<script>
+var myWindow;
+
+function openWin() {
+  myWindow = window.open("https://google.com", "_blank", "width=500, height=500");
+}
+
+function closeWin() {
+  myWindow.close();
+}
+</script>
+
+</body>
+</html>
